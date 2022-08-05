@@ -610,7 +610,7 @@ void IIR_Elliptic_Filter::ellipap(int order_filt, double Rp, double Rs)
 
     double k1_matlab = ep / es;
    
-    int half_order = std::floor(order_filt/2);
+    int half_order = std::floor((double)order_filt/2);
 
     std::vector<double> ui_matlab(half_order,0);    //Initialize the vector with "0" values
 
