@@ -20,4 +20,15 @@ Filter the data: the method is "std::vector Filter_Data(std::vector<std::vector 
 
 The library Armadillo needs to be downloaded and installed ((http://arma.sourceforge.net/download.html)) along with lapack and blas. I have uploaded the lapack and blas libraries that I have used. Please, note that with the older version of Armadillo, I had to use #define ARMA_DONT_USE_CXX11 to make armadillo library work with C++/CLR in visual studio 2019. If you use the latest version (armadillo-9.880.1), which I would recommend, because it is supposedly faster than the previous one, as the developers told me, you should replace #define ARMA_DONT_USE_CXX11 with #define ARMA_DONT_USE_CXX11_MUTEX.
 
+If you are running the code in Linux (I tried it in Ubuntu 18.04), you need to make the following changes in Elliptic_Filter.cpp:
+
+Comment out #include <crtdbg.h>
+Cooment out _CrtDumpMemoryLeaks() in lines 68, 129, 191 and 250.
+You can also remove the line of code #define ARMA_DONT_USE_CXX11_MUTEX (or #define ARMA_DONT_USE_CXX11) and, based on my communication with the guys who created armadillo, the code should run faster.
+
+Compile the code in the following way:
+
+g++ -c Elliptic_Filter_H.cpp (to generate Elliptic_Filter_H.o)
+g++ -ggdb Elliptic_Filter.cpp Elliptic_Filter_H.o -larmadillo -o <Name_Exe_File>
+
 If you have any question and/or want to report bugs, please e-mail me (Ale) at: pressalex@hotmail.com
