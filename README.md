@@ -2,7 +2,7 @@
 C++ code to calculate the coefficients of the Elliptic filter
 
 
-This code calculate the coefficients of the Band-pass, Band-stop, Low-pass and High-pass Elliptic filters. The file Elliptic_Filter.cpp can be used to test the code. It also filters the data, but no zero-phase delay is applied. The name space is: IIR_E_F. The code follows the same steps as in Matlab.
+This code calculates the coefficients of the Band-pass, Band-stop, Low-pass and High-pass Elliptic filters. The file Elliptic_Filter.cpp can be used to test the code. It also filters the data, but no zero-phase delay is applied. The name space is: IIR_E_F. The code follows the same steps as in Matlab.
 
 Each filter function will return a 2 rows x N coefficients 2D vector, where Row 1 = Numerator and Row 2 = Denumerator. The method "check_stability_iir" can be used to check the stability of the filter.
 
