@@ -245,7 +245,7 @@ double IIR_Elliptic_Filter::sne(std::vector<double> u_matlab, double k_matlab)
     //Clean the vector that it is longer needed
     v_matlab.clear();
     
-    //Calculate the product of the arry elements in w_matlab
+    //Calculate the product of the array elements in w_matlab
     double prod_matlab = 1;
 
     for (int kk = 0; kk < w_matlab.size(); kk++)
