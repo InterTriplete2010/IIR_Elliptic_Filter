@@ -596,7 +596,7 @@ std::vector<std::complex<double>> IIR_Elliptic_Filter::cplxpair(std::vector<std:
 
 }
 
-//Step 3: Get N - th order Butterworth analog lowpass prototype
+//Step 3: Get N - th order Elliptic analog lowpass prototype
 void IIR_Elliptic_Filter::ellipap(int order_filt, double Rp, double Rs)
 {
 
