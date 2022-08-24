@@ -35,7 +35,7 @@ std::complex<double> complex_real_2(2.0, 0.0);
 std::complex<double> complex_imag(0.0, 1.0);
 std::complex<double> complex_neg_imag(0.0, -1.0);
 
-//Output of the Ellipap unction
+//Output of the Ellipap function
 std::vector<std::complex<double>> z_matlab_ellipap;
 std::vector<std::complex<double>> p_matlab_ellipap;
 std::complex<double> k_matlab_ellipap;
