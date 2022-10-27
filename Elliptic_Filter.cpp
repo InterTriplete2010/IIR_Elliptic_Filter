@@ -1,5 +1,5 @@
 //This file contains the 'main' function. Program execution begins and ends there.
-//Calculate the coefficients of the butterworth filter. It follows the steps as described in Matlab. 
+//Calculate the coefficients of the Elliptic filter. It follows the steps as described in Matlab. 
 //The same symbols as in Matlab are used to facilitate the writing of the code
 #define _CRTDBG_MAP_ALLOC
 #include <stdio.h> 
