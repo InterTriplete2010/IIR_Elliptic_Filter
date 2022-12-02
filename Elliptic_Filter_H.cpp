@@ -1289,7 +1289,7 @@ void IIR_Elliptic_Filter::zp2ss()
 
         b1_matlab[0] = 1;
 
-        c1_matlab[0] = t_matlab[0][0];
+        c1_matlab[0] = 0;   //t_matlab[0][0];
         c1_matlab[1] = t_matlab[1][1];
 
         d1_matlab = 0;
