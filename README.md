@@ -31,4 +31,4 @@ Compile the code in the following way:
 g++ -c Elliptic_Filter_H.cpp (to generate Elliptic_Filter_H.o)
 g++ -ggdb Elliptic_Filter.cpp Elliptic_Filter_H.o -larmadillo -o <Name_Exe_File>
 
-If you have any question and/or want to report bugs, please e-mail me (Ale) at: pressalex@hotmail.com
+If you have any questions and/or want to report bugs, please e-mail me (Ale) at: pressalex@hotmail.com
