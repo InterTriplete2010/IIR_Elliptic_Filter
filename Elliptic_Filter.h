@@ -31,7 +31,7 @@ extern "C" {  // only need to export C interface if
             //convert to low-pass prototype estimate
             void Wn_f1_Wn_f2(int, double, double);
 
-            //Get N - th order Elliptic analog lowpass prototype. It returns the poles of the analog form located on the unit circle in the left-half plane so to have a stable causal system
+            //Get N - th order Elliptic analog lowpass prototype. 
             void ellipap(int, double, double);
 
             //Get Landen vector of descending moduli and return a vector of double numbers
