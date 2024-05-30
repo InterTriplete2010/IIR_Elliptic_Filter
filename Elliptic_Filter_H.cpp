@@ -529,8 +529,8 @@ std::vector<double> IIR_Elliptic_Filter::ellipk(double k_matlab)
 
 }
 
-//Sort complex numbers into complex conjugate pairs, starting from with the number with the lowest real part.
-//If the real part is the same for all the number, order according to the absolute value of the highest imaginary part.
+//Sort complex numbers into complex conjugate pairs, starting from the number with the lowest real part.
+//If the real part is the same for all the numbers, order according to the absolute value of the highest imaginary part.
 //Within a pair, the element with negative imaginary part comes first.
 std::vector<std::complex<double>> IIR_Elliptic_Filter::cplxpair(std::vector<std::complex<double>> complex_vector)
 {
