@@ -28,7 +28,6 @@ You can also remove the line of code #define ARMA_DONT_USE_CXX11_MUTEX (or #defi
 
 Compile the code in the following way:
 
-g++ -c Elliptic_Filter_H.cpp (to generate Elliptic_Filter_H.o)
-g++ -ggdb Elliptic_Filter.cpp Elliptic_Filter_H.o -larmadillo -o <Name_Exe_File>
+g++ -c Elliptic_Filter_H.cpp (to generate Elliptic_Filter_H.o)                                                                                                                                             g++ -ggdb Elliptic_Filter.cpp Elliptic_Filter_H.o -larmadillo -o <Name_Exe_File>
 
 If you have any questions and/or want to report bugs, please e-mail me (Ale) at: pressalex@hotmail.com
